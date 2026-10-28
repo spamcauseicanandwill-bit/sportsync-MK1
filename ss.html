@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SportSync | Train Smarter</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080d19;color:#f4f7ff;font-family:Arial,sans-serif}
+nav{padding:24px 8%;display:flex;justify-content:space-between;border-bottom:1px solid #202b40}
+.logo{font-size:25px;font-weight:800;color:#65e8e0}
+nav a,.btn{color:white;text-decoration:none}
+.hero{padding:100px 8%;display:grid;grid-template-columns:1.2fr 1fr;gap:45px;align-items:center}
+.tag{color:#65e8e0;text-transform:uppercase;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(44px,7vw,76px);line-height:1.05;margin:22px 0}
+.gradient{color:#65e8e0}
+p{color:#a8b5cb;line-height:1.8}
+.btn{display:inline-block;background:#65e8e0;color:#07111c;padding:14px 22px;border-radius:8px;font-weight:bold;margin-top:15px}
+.glasses{background:linear-gradient(145deg,#142641,#101625);border:1px solid #294363;border-radius:24px;padding:40px 20px;text-align:center}
+.glasses svg{width:100%;max-width:420px}
+.status{border:1px solid #2b425d;border-radius:12px;padding:15px;margin-top:20px;text-align:left}
+section{padding:70px 8%}
+h2{font-size:38px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#111a2b;border:1px solid #243149;border-radius:14px;padding:24px}
+.card h3{color:#65e8e0}
+.demo{background:#111a2b;border:1px solid #243149;padding:25px;border-radius:16px;max-width:700px}
+button{background:#65e8e0;border:0;padding:12px 17px;border-radius:7px;font-weight:bold;cursor:pointer;margin:5px 5px 5px 0}
+footer{padding:25px 8%;border-top:1px solid #243149;color:#a8b5cb}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding-top:60px}.grid{grid-template-columns:1fr}h1{font-size:48px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">◈ SportSync</div>
+  <a href="#demo">Try the demo ↗</a>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="tag">The future of sports training</div>
+    <h1>Your game.<br>Your coach.<br><span class="gradient">Your future.</span></h1>
+    <p>Meet SportSync: an AI basketball coaching concept designed to help players understand their technique, improve their skills, and train with confidence.</p>
+    <a class="btn" href="#demo">Explore SportSync →</a>
+    <p style="font-size:12px">A student innovation project · Basketball prototype</p>
+  </div>
+  <div class="glasses">
+    <svg viewBox="0 0 440 180" role="img" aria-label="SportSync smart glasses concept">
+      <defs>
+        <linearGradient id="lens"><stop stop-color="#27517a"/><stop offset="1" stop-color="#101b30"/></linearGradient>
+      </defs>
+      <path d="M25 45 L5 28 M415 45 L435 28" stroke="#7188a8" stroke-width="12" stroke-linecap="round"/>
+      <path d="M25 40 L190 35 Q207 35 210 55 L205 112 Q202 130 184 132 L65 132 Q45 130 40 110 Z" fill="url(#lens)" stroke="#8194ad" stroke-width="8"/>
+      <path d="M230 55 Q233 35 250 35 L415 40 L400 110 Q395 130 375 132 L256 132 Q238 130 235 112 Z" fill="url(#lens)" stroke="#8194ad" stroke-width="8"/>
+      <path d="M210 54 Q220 43 230 54" fill="none" stroke="#8194ad" stroke-width="9"/>
+      <path d="M60 55 L125 50 M270 50 L335 55" stroke="#65e8e0" stroke-width="3" opacity=".8"/>
+      <circle cx="45" cy="61" r="5" fill="#65e8e0"/>
+      <circle cx="395" cy="61" r="5" fill="#65e8e0"/>
+    </svg>
+    <div class="status"><span class="gradient">● SPORTSYNC VISION</span><br>Personalized coaching. Anywhere.</div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="tag">Built for athletes</div>
+  <h2>Practice with a purpose.</h2>
+  <p>Technology that aims to make better coaching more accessible.</p>
+  <div class="grid">
+    <div class="card"><h3>⌁ AI Movement Analysis</h3><p>Track body landmarks and measure selected movements using computer vision.</p></div>
+    <div class="card"><h3>◈ Personalized Feedback</h3><p>Turn reliable measurements and coach-reviewed criteria into useful practice cues.</p></div>
+    <div class="card"><h3>◎ Wearable Coaching</h3><p>Explore a future where coaching cues appear through an augmented reality display.</p></div>
+    <div class="card"><h3>↗ Track Progress</h3><p>Compare sessions and see how selected measurements change over time.</p></div>
+    <div class="card"><h3>♧ Coach-Informed</h3><p>Build on expert knowledge to review technique and improve the feedback.</p></div>
+    <div class="card"><h3>∞ More Accessible</h3><p>Help explore affordable training support for players without regular private coaching.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="tag">How it works</div>
+  <h2>From movement to improvement.</h2>
+  <div class="grid">
+    <div class="card"><h3>01 · Capture</h3><p>A camera records a basketball player's movement.</p></div>
+    <div class="card"><h3>02 · Analyze</h3><p>Computer vision identifies body landmarks and estimates joint angles.</p></div>
+    <div class="card"><h3>03 · Improve</h3><p>Coach-reviewed rules help turn reliable measurements into practice guidance.</p></div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="tag">Interactive concept</div>
+  <h2>Meet your virtual coach.</h2>
+  <div class="demo">
+    <p>Explore example coaching cues. This demo is illustrative and does not analyze real movement.</p>
+    <button onclick="coach('form')">Shooting form</button>
+    <button onclick="coach('follow')">Follow-through</button>
+    <button onclick="coach('reset')">Reset</button>
+    <div class="status" id="feedback"><span class="gradient">SPORTSYNC COACH</span><p>Choose an example to begin.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="tag">Our mission</div>
+  <h2>Talent is everywhere.<br><span class="gradient">Access should be too.</span></h2>
+  <p>SportSync is a student innovation project exploring how AI-assisted sports training could make personalized guidance more accessible. We are starting with basketball and working toward a functional prototype.</p>
+  <a class="btn" href="#features">Discover the vision →</a>
+</section>
+
+<footer>◈ SportSync · Student innovation project · Basketball prototype</footer>
+
+<script>
+function coach(type){
+  const box=document.getElementById('feedback');
+  const messages={
+    form:'<span class="gradient">SHOOTING FORM</span><p>Review your balance and shooting-arm position with a coach. A real version would measure movement from video.</p>',
+    follow:'<span class="gradient">FOLLOW-THROUGH</span><p>Try holding your finishing position briefly after releasing the ball. This is an example cue, not a detected mistake.</p>',
+    reset:'<span class="gradient">SPORTSYNC COACH</span><p>Choose an example to begin.</p>'
+  };
+  box.innerHTML=messages[type];
+}
+</script>
+</body>
+</html>
